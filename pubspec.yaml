@@ -1,0 +1,29 @@
+name: uni_links
+description: Flutter plugin for accepting incoming links - App/Deep Links
+  (Android), Universal Links and Custom URL schemes (iOS).
+version: 0.4.0
+homepage: https://github.com/avioli/uni_links
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+  flutter: '>=1.19.0 <2.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pedantic: ^1.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: name.avioli.unilinks
+        pluginClass: UniLinksPlugin
+      ios:
+        pluginClass: UniLinksPlugin
+      macos:
+        pluginClass: UniLinksPlugin
